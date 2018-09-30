@@ -5,10 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 class rowComparator implements Comparator<String>{
-	/*
-	 * Assuming the rows are separated by comma
-	 * And the schema of csv is fixed i.e. 0th column is DeviceId and 5th column is Date
-	 * And the date field is present either in "yyyy-MM-dd" format OR in "MM/dd/yy" format
+	/* Assumptions :
+	 * The rows are separated by comma
+	 * The schema of csv is fixed i.e. 0th column is DeviceId and 5th column is Date
+	 * The date field is present either in "yyyy-MM-dd" format OR in "MM/dd/yy" format
+	 * The date field can be blank but Device Id will NEVER be blank
+	 * If the device id of 2 rows is same but one row has a blank date field , then that row will be placed first
 	 */
 	public int compare(String row1,String row2) {
 		String[] row1Arr=row1.split(",");
@@ -64,6 +66,5 @@ class rowComparator implements Comparator<String>{
 			else if(date1!=null && date2==null) return 1;
 			else return date1.compareTo(date2);
 		}
-		
 	}
 }

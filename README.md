@@ -13,7 +13,7 @@ Here's a screenshot of it in my Mac :
 **java -cp path_to_challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge1**  
 
 Example :
-java -cp ./challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge1  
+java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge1  
 Here's a screenshot of it in my Mac :
 ![alt text](https://github.com/riksigi/challenge/blob/master/screenshots/runChallenge1.png)
 
@@ -32,7 +32,7 @@ Here's a screenshot of it in my Mac :
 
 Example of running challenge 2 with large data set :  
 
-java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 ./src/main/resources/large_data.csv  
+java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 ../large_data.csv  
 
 Here's a screenshot of it in my Mac :
 ![alt text](https://github.com/riksigi/challenge/blob/master/screenshots/runChallenge2WithLargeDataSet.png)

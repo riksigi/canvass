@@ -1,38 +1,38 @@
 # READ ME 
 
 ## How to Build ?
-I have used java to code and maven to build the jars provided in the target directory.Please ensure you also have java(check by typing java -version)  and maven(check by typing mvn -version) installed in your system if you want to build it yourself .In case you dont have java and maven , please directly use the challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar provided in the target directory to run the application.
+I have used java to code and maven to build the jars provided in the target directory.Please ensure you also have java(check by typing java -version)  and maven(check by typing mvn -version) installed in your system if you want to build it yourself .In case you dont have java and maven , please directly use the challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar provided in the target directory to run the application.  
 
-The command to build it yourself is : 
-**mvn clean package**
-This command compiles and builds the jar with all dependencies. It also runs all the 7 basic unit test cases that I have provided for challenge 1 and challenge 2 ensuring nothing is broken in case future features are added.
+The command to build it yourself is :   
+**mvn clean package**  
+This command compiles and builds the jar with all dependencies. It also runs all the 7 basic unit test cases that I have provided for challenge 1 and challenge 2 ensuring nothing is broken in case future features are added.  
 Here's a screenshot of it in my Mac :
 ![alt text](https://github.com/riksigi/challenge/blob/3da9b7f2d27642284f26a381b626685e97fcc172/screenshots/build.png)
 
 ### How to run Challenge 1 ?
-**java -cp <path to challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar> com.canvass.challenge.Challenge1**
+**java -cp path_to_challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge1**  
 
 Example :
-java -cp ./challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge1
+java -cp ./challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge1  
 Here's a screenshot of it in my Mac :
 ![alt text](https://github.com/riksigi/challenge/blob/master/screenshots/runChallenge1.png)
 
-###How to run Challenge 2 ?
+### How to run Challenge 2 ?
 
-**java -cp <path to challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar> com.canvass.challenge.Challenge2 <path to input csv file>**
+**java -cp path_to_challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 path_to_input csv file**  
 
-You can also increase the memory size (if the default memory is too low) with java flags like -Xms4G
+You can also increase the memory size (if the default memory is too low) with java flags like -Xms4G  
 
-Example of running challenge 2 with small data set :
+Example of running challenge 2 with small data set :  
 
-java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 ./src/main/resources/random_data.csv
+java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 ./src/main/resources/random_data.csv  
 
 Here's a screenshot of it in my Mac :
 ![alt text](https://github.com/riksigi/challenge/blob/master/screenshots/runChallenge2WithSmallDataSet.png)
 
-Example of running challenge 2 with large data set :
+Example of running challenge 2 with large data set :  
 
-java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 ./src/main/resources/large_data.csv
+java -cp ./target/challenge-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.canvass.challenge.Challenge2 ./src/main/resources/large_data.csv  
 
 Here's a screenshot of it in my Mac :
 ![alt text](https://github.com/riksigi/challenge/blob/master/screenshots/runChallenge2WithLargeDataSet.png)
